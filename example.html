@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en-gb'>
+<head>
+  <title>equal height thingies</title>
+  <style>
+    body {
+      width:                800px;
+    }
+    ul {
+      outline:              1px solid black;
+      width:                750px;
+      margin:               0;
+    }
+    li {
+      list-style:           none;
+      width:                230px;
+      margin:               10px;
+      float:                left;
+    }
+    li p {
+      background:           #ccc;
+      padding:              10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Equal height children example</h1>
+  
+  <h2>Without any JS applied</h2>
+  <ul>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>
+        I am a much bigger thing. Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. 
+      </p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+  </ul>
+  
+  <h2>With JS applied</h2>
+  <ul data-equal-height='li p'>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>
+        I am a much bigger thing. Lorem ipsum dolor sit amet, consectetur 
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. 
+      </p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+    <li>
+      <p>I am a thing.</p>
+    </li>
+  </ul>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  <script src='af.equal-height.js'></script>
+  <script>
+    $('[data-equal-height]').make_children_equal_height();
+  </script>
+</body>
+</html>
