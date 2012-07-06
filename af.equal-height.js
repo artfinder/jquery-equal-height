@@ -18,7 +18,7 @@
                 $this.css('min-height', ''); 
                 var h = $this.height();
                 if ( h > tallest ) {
-                    tallest = parseInt(h);
+                    tallest = h;
                 }
             });
             
