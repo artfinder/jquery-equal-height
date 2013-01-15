@@ -24,6 +24,12 @@ Using the plugin
           $('[data-equal-height]').make_children_equal_height();
         </script>
 
+1.  Revoke the plugin
+
+        <script>
+          $('[data-equal-height]').make_children_disequal_height();
+        </script>
+
 1.  Optionally call the function again if the heights are likely to have
     changed (eg. if the browser is resized, the font is resized, etc.)
     
