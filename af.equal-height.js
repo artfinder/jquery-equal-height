@@ -31,5 +31,19 @@
             make_equal_height(this);
         });
     };
+	
+	$.fn.make_children_disequal_height = function () {
+		var make_disequal_height = function (element) {
+			var $within     = $(element),
+				selector    = $within.attr('data-equal-height'),
+				$children   = $(selector, $within);
+				$children.each( function() {function () {
+					$(this).css('min-height', '');
+				}};
+		};
+		return this.each( function () {
+			make_disequal_height(this);
+		});
+	};
     
 })( jQuery );
