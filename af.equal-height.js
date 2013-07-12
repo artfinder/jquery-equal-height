@@ -16,7 +16,7 @@
                 var $this = $(this);
                 
                 $this.css('min-height', ''); 
-                var h = $this.height();
+                var h = $this.outerHeight(true);
                 if ( h > tallest ) {
                     tallest = h;
                 }
