@@ -37,9 +37,9 @@
 			var $within     = $(element),
 				selector    = $within.attr('data-equal-height'),
 				$children   = $(selector, $within);
-				$children.each( function() {function () {
+				$children.each( function() {
 					$(this).css('min-height', '');
-				}};
+				});
 		};
 		return this.each( function () {
 			make_disequal_height(this);
